@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>David Hanam</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/mediaqueries.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <nav id="desktop-nav">
+            <div>  
+                <ul class= "nav-links">
+                    <li> <a href="#Landing-page">  <ion-icon name="home-outline"></ion-icon> </a></li>
+                    <li> <a href="#about">   <ion-icon name="person-outline"></ion-icon> </a></li>
+                    <li> <a href="#projects">  <ion-icon name="code-slash-outline"> </ion-icon> </a></li>
+                    <li> <a href="#contact">  <ion-icon name="call-outline"></ion-icon> </a></li>
+                </ul>
+            </div>
+            
+        </nav>
+          <nav id="hamburguer-nav">
+                    <li> <a href="#projects"> Projects </a></li>
+                    <li> <a href="#projects"> Projects </a></li>
+            <div  style="
+            font-size: 1rem; background" >
+                Hanam David
+            </div>
+            <div class="hamburguer-menu">
+                <div class="hamburguer-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li> <a href="#Landing-page" onclick="toggleMenu()"> Home </a></li>
+                    <li> <a href="#projects" onclick="toggleMenu()"> Projects </a></li>
+                    <li> <a href="#about" onclick="toggleMenu()"> About </a></li>
+                    <li> <a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+        <section id="Landing-page">
+            
+            <div class= "welcome-page">
+                <div class= "welcome-page-logo" data-title= "Hanam David">
+                    Hanam David
+                    <div class= "welcome-page-data">
+                        Ai, web and more... 
+                    </div>
+                </div>
+                <div class= "Logo-image">
+                    <img src="./resources/hack.gif" alt="logo">
+                </div>
+                <div class="elements">
+                    <div> <ion-icon name="musical-note-outline"></ion-icon> </div>
+                    <div> <ion-icon name="musical-note-outline"></ion-icon>  </div>
+                    <div> <ion-icon name="logo-react"></ion-icon></div>
+                    <div> <ion-icon name="musical-note-outline"></ion-icon>   </div>
+                    <div> <ion-icon name="musical-note-outline"></ion-icon> </div>
+                    <div> <ion-icon name="analytics-outline"></ion-icon> </div>
+                    <div> <ion-icon name="logo-react"></ion-icon>  </div>
+                    <div> <ion-icon name="analytics-outline"></ion-icon>  </div>
+                </div>
+            </div>
+
+        </section>
+    
+        <section id="about">
+            <div class="box-container"> 
+                    <div class="img-carnet">
+                        <p><ion-icon style="color:#72fe3c;" name="business-outline"></ion-icon>  UNAL</p>
+                        <img src="./resources/profile.jpg" alt="Myself">
+                        <p style="color:#7ae77a;">  Juan David</p>
+                        <p>  Guarnizo Gutierrez</p>
+                        <p style="background-color:#606060;">  Student</p>
+                    </div>
+                <div>
+                    <div class="about-header">
+                        <h1>I am Juan David Guarnizo!</h1>
+                         <h2>from... <span style="color:#fee33c;">Co</span><span style="color:#61ffe1">lom</span><span style="color:#ff6161">bia</span>
+                        </h2>
+                    </div>
+                    <div>
+                        <p style="margin-top:5%">
+                        I am a current Student of Computation at the National University of Colombia, passionate, nerdy and in love with computers, math
+                        and Human knowledge
+                        <p>
+                        <div class="icon-section">
+                            <img src="./resources/go-icon.png" alt="go">
+                            <img src="./resources/cpp-icon.jpg" alt="cpp">
+                            <img src="./resources/html.png" alt="html">
+                            <img src="./resources/css.png" alt="css">
+                    </div>
+                
+
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1> What i have made...
+            </h1>
+            <div class="project-container">
+                <div class ="project-card" style="background-image: url(./resources/gopsalm.png);">
+                    <a href="https://github.com/HanamDavid/GoPsalm" style="font-size:2rem">
+                    <div >
+                        <span style="font-family: 'Caveat', cursive;"> Go psalm </span>
+                        
+                        <span> Made with </span>
+                        <img src="./resources/go-icon.png" alt="">
+                        <span> Look at </span>
+                        <ion-icon name="logo-github">       
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-header">
+                <h1> Get in Contact </h1>
+                <p> <ion-icon name="mail-outline"></ion-icon> juandguarnizo64@gmail.com</p>
+                <p> <ion-icon name="phone-portrait-outline"></ion-icon> +57 3028091227</p>
+                <div class="contact-data">
+                    <a href="https://co.linkedin.com/in/juan-david-guarnizo-gutierrez-1a0333267"> <img src="./resources/linkedIn-logo.png" alt="linked"></a>
+                    <a href="https://github.com/HanamDavid"> <img src="./resources/GitHub-Logo.png" alt="ghub"> </a>
+                </div>
+            </div>
+            <div class="current-status">
+                <h2>Status:</h2>
+                <p> Currently searching for opportunities in web development </p>
+                <img src="./resources/search.jpg" alt="looking">
+            </div>
+        </section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js" > </script>
+    </body>
+</html>
+

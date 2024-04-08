@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="alp.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <rect
+       x="462.15228"
+       y="489.89557"
+       width="419.20737"
+       height="339.43988"
+       id="rect6" />
+    <rect
+       x="462.15228"
+       y="489.89557"
+       width="419.20737"
+       height="339.43988"
+       id="rect6-1" />
+    <rect
+       x="462.15228"
+       y="489.89557"
+       width="419.20737"
+       height="339.43988"
+       id="rect6-1-2" />
+    <rect
+       x="462.15228"
+       y="489.89557"
+       width="419.20737"
+       height="339.43988"
+       id="rect6-8" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(8.3329009,-3.9041287,2.9640127,6.3263346,-5144.9327,-1199.2696)"
+       id="text6"
+       style="white-space:pre;shape-inside:url(#rect6);fill:#f9f9f9"><tspan
+         x="462.15234"
+         y="500.51367"
+         id="tspan2">α</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(8.3329009,-3.9041287,2.9640127,6.3263346,-5350.8085,-1199.1553)"
+       id="text6-8"
+       style="white-space:pre;shape-inside:url(#rect6-8);fill:#f9f9f9"
+       inkscape:export-filename="alp.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         x="462.15234"
+         y="500.51367"
+         id="tspan3">α</tspan></text>
+    <g
+       id="g1"
+       transform="matrix(0.7493439,0,0,0.79721931,90.833645,245.87453)">
+      <g
+         id="g1-4"
+         transform="translate(-149.225,-39.952083)">
+        <text
+           xml:space="preserve"
+           transform="matrix(8.3329009,-3.9041287,2.9640127,6.3263346,-5194.5702,-1233.6572)"
+           id="text6-7"
+           style="white-space:pre;shape-inside:url(#rect6-1);display:inline;fill:#f9f9f9"><tspan
+             x="462.15234"
+             y="500.51367"
+             id="tspan4">Ω</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2"
+       transform="matrix(0.7493439,0,0,0.79721931,90.898266,-49.074121)">
+      <g
+         id="g1-4-4"
+         transform="translate(-149.225,-39.952083)">
+        <text
+           xml:space="preserve"
+           transform="matrix(8.3329009,-3.9041287,2.9640127,6.3263346,-5194.5702,-1233.6572)"
+           id="text6-7-4"
+           style="white-space:pre;shape-inside:url(#rect6-1-2);display:inline;fill:#f9f9f9"><tspan
+             x="462.15234"
+             y="500.51367"
+             id="tspan5">Ω</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

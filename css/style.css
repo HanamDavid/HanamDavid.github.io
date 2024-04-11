@@ -2,10 +2,9 @@
     padding: 0;
 }
 
-body{
-
+body{  
     background: rgb(9,6,6);
-    background: linear-gradient(90deg, rgba(9,6,6,1) 5%, rgba(70,66,134,1) 41%, rgba(32,25,74,1) 87%);
+    background: linear-gradient(90deg, rgba(9,6,6,1) 5%, rgba(50,21,33,1) 19%, rgba(176,47,96,1) 49%, rgba(50,21,33,1) 80%, rgba(9,6,6,1) 95%);
 }
 
 html{
@@ -308,7 +307,7 @@ nav{
     width: 100vw;
     height: 100vh;
     background: rgb(9,6,6);
-    background: linear-gradient(90deg, rgba(9,6,6,1) 5%, rgba(70,66,134,1) 41%, rgba(32,25,74,1) 87%);
+    background: linear-gradient(90deg, rgba(9,6,6,1) 5%, rgba(50,21,33,1) 19%, rgba(176,47,96,1) 49%, rgba(50,21,33,1) 80%, rgba(9,6,6,1) 95%);
 }
 
 #pattern{

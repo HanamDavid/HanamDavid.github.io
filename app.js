@@ -1,11 +1,3 @@
-
-function _toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburguer-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-
-}
 const observer = new IntersectionObserver(
     (entries)=>{
         entries.forEach((entry)=> {
@@ -24,5 +16,17 @@ const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el)=> observer.observe(el));
 
+const tracker = document.getElementById("tracker");
+
+window.onpointermove = event =>{
+    const{pageX, pageY} = event;
+
+    tracker.animate(
+        {
+        left: `${pageX}px`,
+        top: `${pageY}px`
+        }   , { duration: 1000, fill: "forwards" });
+
+}
 
 

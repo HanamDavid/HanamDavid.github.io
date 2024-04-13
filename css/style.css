@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    overflow-x: hidden;
     position: relative;
     z-index: 3;
     background-color: rgba(12, 10, 0, 1);
@@ -17,6 +18,9 @@ body{
 
 /*Extra*/
 
+.The-Great-Container{
+    overflow: hidden;
+}
 #pointer{
     font-size: 2rem;
     position: absolute;
@@ -41,7 +45,7 @@ body{
     background: linear-gradient(to right, red, rgb(143,232,224));
     animation: rotate 20s infinite;
     opacity: 0.8;
-    z-index:1;
+    z-index:-3;
 }
 #background-br {
     position: absolute;
@@ -302,6 +306,7 @@ a:visited{
     font-family: "Caveat",cursive;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     animation: back_anim  10s ease infinite;
     z-index: 4;
 }
@@ -521,7 +526,7 @@ a:visited{
 
 #about{
     background-color: rgba(12, 10, 0,0.4);
-    height: 90vh;
+    height: 100vh;
     z-index: 4;
 }
 
@@ -613,7 +618,7 @@ a:visited{
 
 #projects{
     position: relative;
-    height: 90vh;
+    height: 100vh;
     z-index: 5;
 }
 

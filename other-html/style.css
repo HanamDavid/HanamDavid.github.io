@@ -1,0 +1,136 @@
+body{
+    width: 100vw;
+    background-color: black;
+}
+.navbar{
+    font-family: "Teko", sans-serif;
+}
+a{
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.circle {
+    background-color: #373f51;
+    border-radius: 50%;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotate 5s linear infinite;
+}
+
+.inner-circle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-circle li {
+    position: absolute;
+    list-style: none;
+    left: -80px;
+    justify-content: center;
+    transform-origin: 40px;
+    transform: rotate(calc(360deg / 6 * var(--i)));
+    display: flex;
+    align-items: center;
+}
+
+.inner-circle a{
+    font-size: 1.5rem;
+}
+
+.middle-circle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle-circle a{
+    font-size: 1.5rem;
+    color: red;
+}
+
+.middle-circle li {
+    position: absolute;
+    list-style: none;
+    left: -80px;
+    justify-content: center;
+    transform-origin: 100px;
+    transform: rotate(calc(360deg / 4  * var(--i)));
+    display: flex;
+    align-items: center;
+}
+
+.outside-circle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outside-circle li {
+    position: absolute;
+    list-style: none;
+    left: -80px;
+    justify-content: center;
+    transform-origin: 140px;
+    transform: rotate(calc(360deg / 10 * var(--i)));
+    display: flex;
+    align-items: center;
+}
+.outside-circle a{
+    font-size: 1.5rem;
+    color: pink;
+}

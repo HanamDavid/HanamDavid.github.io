@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="row">
+  <body >
+    <div class="container-fluid" style="height: 100vh;" >
         <div class="navbar" style="background-color:#f56476">
             <div class="container-fluid" >
                 <a class="navbar-brand" href="#" >
@@ -21,45 +21,56 @@
                     Terapia Visual</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-8 rotador d-flex justify-content-center">
+        <div class="row container-fluid" style="height:80% ; background-color:black ;">
+            <div class=" rotador d-flex justify-content-center align-items-center">
                 <div class="circle d-flex justify-content-center">
-                    <div class="inner-circle d-flex justify-content-center" style="color:white">
-                        <ul class="d-flex justify-content-center align-items-center list-unstyled" style="color:white">
-                        <li style="--i:0;"> <a href=""> <ion-icon name="earth"></ion-icon> </a></li>
-                        <li style="--i:1;"> <a href=""><ion-icon name="rocket"></ion-icon> </a></li>
-                        <li style="--i:2;"> <a href=""> <ion-icon name="heart-circle"></ion-icon></a></li>
-                        <li style="--i:3;"> <a href=""> <ion-icon name="planet"></ion-icon></a></li>
-                        <li style="--i:4;"> <a href=""> <ion-icon name="glasses"></ion-icon> </a></li>
-                        <li style="--i:5;"> <a href=""> <ion-icon name="cloudy"></ion-icon> </a></li>
-                         </ul>
+                    <div class="center-circle d-flex justify-content-center bg-light" style="color:red">X</div>
+                    <div class="inner-circle d-flex justify-content-center" style="color:rgba(58, 60, 233, 0.932)">
+                        <li style="--i:0;"> <button > <ion-icon name="earth" style="color:rgb(228,63,111)"> </ion-icon> </button></li>
+                        <li style="--i:1;"> <button ><ion-icon name="rocket" style="color:rgb(0,150,224)"></ion-icon> </button></li>
+                        <li style="--i:2;"> <button > <ion-icon name="heart-circle" style="color:rgb(108, 255, 206)"></ion-icon></button></li>
+                        <li style="--i:3;"> <button> <ion-icon name="planet" style="color:rgb(228,63,111)"> </ion-icon></button></li>
+                        <li style="--i:4;"> <button> <ion-icon name="glasses"style="color:rgb(0,150,224)"></ion-icon> </button></li>
+                        <li style="--i:5;"> <button> <ion-icon name="cloudy" style="color:rgb(108, 255, 206)"></ion-icon> </button></li>
                     </div> 
-                    <div class="middle-circle">                
-                        <li style="--i:0;"> <a href=""><ion-icon name="earth"></ion-icon> </a></li>
-                        <li style="--i:1;"> <a href=""><ion-icon name="rocket"></ion-icon>  </a></li>
-                        <li style="--i:2;"> <a href="">  <ion-icon name="heart-circle"></ion-icon></a></li>
-                        <li style="--i:3;"> <a href="">  <ion-icon name="planet"></ion-icon></a></li>
+                    <div class="middle-circle" style="color: black;">                
+                        <li style="--i:0;"> <button><ion-icon name="earth"></ion-icon> </button></li>
+                        <li style="--i:1;"> <button><ion-icon name="rocket"style="color:rgb(228,63,111)"></ion-icon>  </button></li>
+                        <li style="--i:2;"> <button>  <ion-icon name="heart-circle"></ion-icon></button></li>
+                        <li style="--i:3;"> <button>  <ion-icon name="planet"style="color:rgb(228,63,111)"></ion-icon></button></li>
                     </div>  
                     <div class="outside-circle" style="color:#e43f6f">
-                        <li style="--i:0;"> <a href=""> <ion-icon name="earth"></ion-icon> </a></li>
-                        <li style="--i:1;"> <a href=""><ion-icon name="rocket"></ion-icon> </a></li>
-                        <li style="--i:2;"> <a href=""> <ion-icon name="heart-circle"></ion-icon></a></li>
-                        <li style="--i:3;"> <a href=""> <ion-icon name="planet"></ion-icon></a></li>
-                        <li style="--i:4;"> <a href=""> <ion-icon name="glasses"></ion-icon> </a></li>
-                        <li style="--i:5;"> <a href=""> <ion-icon name="cloudy"></ion-icon> </a></li>          
-                        <li style="--i:6;"> <a href=""> <ion-icon name="earth"></ion-icon> </a></li>
-                        <li style="--i:7;"> <a href=""><ion-icon name="rocket"></ion-icon> </a></li>
-                        <li style="--i:8;"> <a href=""> <ion-icon name="heart-circle"></ion-icon></a></li>
-                        <li style="--i:9;"> <a href=""> <ion-icon name="planet"></ion-icon></a></li>
+                        <li style="--i:0;"> <button> <ion-icon name="earth"style="color:rgb(0,150,224)"></ion-icon> </button></li>
+                        <li style="--i:1;"> <button><ion-icon name="rocket"></ion-icon> </button></li>
+                        <li style="--i:2;"> <button> <ion-icon name="heart-circle"style="color:rgb(228,63,111)"></ion-icon></button></li>
+                        <li style="--i:3;"> <button> <ion-icon name="planet"></ion-icon></button></li>
+                        <li style="--i:4;"> <button> <ion-icon name="glasses"style="color:rgb(0,150,224)"></ion-icon> </button></li>
+                        <li style="--i:5;"> <button> <ion-icon name="cloudy"style="color:rgb(228,63,111)"></ion-icon> </button></li>          
+                        <li style="--i:6;"> <button> <ion-icon name="earth"></ion-icon> </button></li>
+                        <li style="--i:7;"> <button><ion-icon name="rocket"style="color:rgb(0,150,224)"></ion-icon> </button></li>
+                        <li style="--i:8;"> <button> <ion-icon name="heart-circle"style="color:rgb(228,63,111)"></ion-icon></button></li>
+                        <li style="--i:9;"> <button> <ion-icon name="planet" ></ion-icon></button></li>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 menu bg-light">
-                <h1 class="row">Menu </h1>
+
+        </div>
+        <div class="row d-flex justify-content-center  menu">
+            <div class="col-sm-3 ">
+                <div class="row"> <h1>Tiempo: <span id="crono">0 </span> s</div>
+                <div class="row"> <h1>Clicks: <span id="click">0</span> </h1></div>
+                <div class="row"> <h1>Figuras faltantes: <span id="fig">20</span> </h1></div>
+            </div>
+            <div class= "col-sm-3 justify-content-center" id="fs" style="margin-top:10px">
+                <button class="btn btn-danger">Reiniciar</button>
+            </div>
+            <div class="col-sm-5 menu ">
+                <label for="customRange1" class="form-label">Velocidad</label>
+                <input type="range" class="form-range" id="customRange1" min="34" max="40">
             </div>
         </div>
-
     </div>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -1,13 +1,14 @@
 :root{
     --time: 4s;
 }
-body{
+body, .container-fluid{
     width: 100vw;
+    margin: 0;
+    padding: 0;
 
-    font-family: "Teko", sans-serif;
 }
 .navbar{
-    left: -0.6%;
+    left: 0;
     font-family: "Teko", sans-serif;
 }
 a{

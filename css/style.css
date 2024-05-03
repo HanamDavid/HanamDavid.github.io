@@ -13,8 +13,9 @@ body{
     overflow-x: hidden;
     width: 100vw;
     cursor: none;
-    background: rgb(255,207,207);
-    background: linear-gradient(0deg, rgba(255,207,207,1) 0%, rgba(254,216,216,1) 24%, rgba(249,246,243,1) 95%);
+    background-image: radial-gradient(pink 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
 }
 
 /*Extra*/
@@ -464,9 +465,6 @@ a:visited{
 }
 
 .record{
-    background-image: radial-gradient(pink 1px, transparent 0);
-    background-size: 40px 40px;
-    background-position: -19px -19px;
     color: black;
     margin-left: 5%;
     margin-right: 5%;
@@ -477,13 +475,12 @@ a:visited{
     border-radius: 10px;
     border-style: dashed ;
     border-color: rgba(255,45,45,0.8);
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(254,216,216,0.6);
     margin-top: 4vh;
     animation: zoomIn 2s;
 }
 
 .img-carnet {
-    background-color: white;
     height: 20vh;
     width: 20vh;
     transition: all 0.4s ease-in-out;
@@ -505,11 +502,8 @@ a:visited{
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    background-color: white;
+    background:  rgba(254,216,216,0.6);
     overflow-x: hidden;
-    background-image: radial-gradient(pink 1px, transparent 0);
-    background-size: 40px 40px;
-    background-position: -19px -19px;
     height: 12vh;
     border-style: dashed;
     border-color: rgba(255, 45, 45, 0.8);
@@ -542,7 +536,7 @@ a:visited{
     font-weight: bold;
     font-size: 4rem;
     color: rgba(255,45,45,0.8); 
-    background-image: radial-gradient(pink 1px, transparent 0);
+    background-color: rgba(254,216,216,0.6);
     background-size: 40px 40px;
     background-position: -19px -19px;
 }
@@ -624,11 +618,8 @@ a {
     font-size: 4rem;
     cursor: default; 
     border-style: dashed;
-    background-color: white;
     border-radius: 10px;
-    background-image: radial-gradient(pink 1px, transparent 0);
-    background-size: 40px 40px;
-    background-position: -19px -19px;
+    background-color: rgba(254,216,216,0.6);
 }
 
 .shell{

@@ -16,6 +16,7 @@ body{
     background-image: radial-gradient(pink 1px, transparent 0);
     background-size: 40px 40px;
     background-position: -19px -19px;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 /*Extra*/
@@ -439,27 +440,31 @@ a:visited{
 
 #about{
     height: 100vh;
+    margin-top: 20px;
     color: black;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 
 .about-header{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 5%;
+    margin-top: 15%;
     font-size: 1rem;
 }
 #about h1{
+    font-family: "Source Sans 3", sans-serif;
     font-size: 2.6rem;
     color: rgba(255, 43, 43, 1);
 }
 #about h2{
     font-size: 2.5rem;
 }
+.databout{
+    border-radius: 20px;
+    background-color: white;
+}
 #about p{
+    font-family: "Source Sans 3", sans-serif;
     font-size: 1.5vw;
 }
 
@@ -472,21 +477,24 @@ a:visited{
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
-    border-style: dashed ;
-    border-color: rgba(255,45,45,0.8);
-    background-color: rgba(254,216,216,0.6);
+    transform: rotate(-1deg);
+    background-color: rgba(255, 244, 204,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.4);
     margin-top: 4vh;
     animation: zoomIn 2s;
 }
 
 .img-carnet {
-    height: 20vh;
-    width: 20vh;
+    margin-left: 10px;
+    height: 30vh;
+    width: 25vh;
     transition: all 0.4s ease-in-out;
     align-items: center;
     background-size: cover;
     background-image: url("../resources/profile.jpg");
+    box-shadow: 0px 0px 0px 10px white;
     animation: zoomIn 3.5s linear;
+    border-radius: 10px;
 }
 
 .img-carnet:hover{
@@ -501,12 +509,11 @@ a:visited{
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    background:  rgba(254,216,216,0.6);
     overflow-x: hidden;
     height: 12vh;
-    border-style: dashed;
-    border-color: rgba(255, 45, 45, 0.8);
-    border-radius: 10px;
+    border-radius: 10px; 
+    background-color: rgba(255, 244, 204,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(1, 1, 1, 0.4);
 }
 
 .icon-section{

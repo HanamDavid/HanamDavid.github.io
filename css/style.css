@@ -1,5 +1,5 @@
 *{ 
-    font-family: 'Rethink Sans', sans-serif; margin: 0;
+    font-family: "Source Sans 3", sans-serif;
     cursor: none;
     padding: 0;
 }
@@ -284,7 +284,6 @@ a:visited{
 
 
 #Landing-page{
-    font-family: "Caveat",cursive;
     height: 100vh;
     width: 100vw;
     animation: back_anim  10s ease infinite;
@@ -292,7 +291,7 @@ a:visited{
 
 
 #Landing-page h1{
-    font-family: 'Anton',cursive;
+    font-family: "Poetsen One", sans-serif;
     font-size: 16vw;
     margin-left: 2vw;
     color: rgba(255, 43, 43, 1);
@@ -461,7 +460,7 @@ a:visited{
     font-size: 2.5rem;
 }
 #about p{
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 .record{
@@ -534,6 +533,8 @@ a:visited{
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-weight: bold;
+    font-family: "Poetsen One", sans-serif;  
+    text-shadow: 2px 2px  white,-2px -2px white,4px -2px white;
     font-size: 4rem;
     color: rgba(255,45,45,0.8); 
     background-color: rgba(254,216,216,0.6);
@@ -615,7 +616,9 @@ a {
     text-align: center;
     font-weight: bold;
     color:rgba(255, 45, 45, 0.8);
-    font-size: 4rem;
+    font-size: 4rem; 
+    font-family: "Poetsen One", sans-serif;  
+    text-shadow: 2px 2px  white,-2px -2px white,4px -2px white;
     cursor: default; 
     border-style: dashed;
     border-radius: 10px;

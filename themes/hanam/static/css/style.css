@@ -566,6 +566,11 @@ main.main-content.fade-out {
 .blog-content li {
     margin-bottom: 8px;
 }
+.blog-content img{
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Blockquotes */
 .blog-content blockquote {

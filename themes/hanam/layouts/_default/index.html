@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center main-container">
+            <div class="col-12 col-md-8 d-flex flex-column flex-md-row justify-content-center align-items-center mb-4">
+                <div class="col-md-8">
+                    <h1 class="whoami-name">Juan Guarnizo</h1>
+                </div>
+                <div class="col-md-4 mt-3 mt-md-0"> <img src="{{ "/images/cat.jpg" | relURL }}" class="catimg img-fluid"> </div>
+            </div>
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 bandser d-flex align-items-center justify-content-center">
+                        <img src="{{ "/images/server.svg" | relURL }}" class="cliser me-1"> <p class="mb-0">➡️</p> <div class="band-wrapper mx-3">
+                            <ul class="band">
+                                <h1>{ "I know": </h1>
+                                <li>["Rest",</li>
+                                <li>"Django",</li>
+                                <li>"Golang",</li>
+                                <li>"Hugo",</li>
+                                <li>"JWT",</li>
+                                <li>"Tensorflow"]</li>
+                                <h1>}</h1>
+                            </ul>
+                        </div>
+                        <img src="{{ "/images/client.svg" | relURL }}" class="cliser ms-2"> </div>
+                    <div class="col-12 mt-3"> <p class="lead">
+                            I am a software engineer passionate about computers, backend, AI, FOSS, and music. <br>
+                            Life is beautiful, and I strive to bring my efforts and knowledge to everything I do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

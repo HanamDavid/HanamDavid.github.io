@@ -1,0 +1,29 @@
+baseURL = "https://hanamdavid.github.io/"
+languageCode = "en-us"
+title = "Juan David | Backend Developer"
+theme = "hanam"
+paginator.pageSize = 6
+
+[permalinks]
+  blog = "/blog/:slug/"
+  portfolio = "/portfolio/:title/"
+
+
+[params]
+  keywords = ["Backend Developer", "Portfolio", "Hugo", "Juan David"]
+  author = "Juan David Guarnizo"
+  description = "A Hugo-based portfolio with a dreamy, modern aesthetic."
+  disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[outputs]
+  home = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNumbersInTable = true
+

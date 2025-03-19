@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="py-5">
+  <div class="container main-container">
+    <h1 class="text-center mb-4 blog-header">My Blog</h1>
+
+    <!-- Category Filter Buttons -->
+    <div class="text-center mb-4">
+      <button class="btn btn-blog filter-btn active-btn" data-category="all">All</button>
+      <button class="btn btn-blog filter-btn" data-category="theology">Theology</button>
+      <button class="btn btn-blog filter-btn" data-category="technology">Technology</button>
+      <button class="btn btn-blog filter-btn" data-category="music">Music</button>
+      <button class="btn btn-blog filter-btn" data-category="miscellaneous">Miscellaneous</button>
+    </div>
+
+    <p class="ls"> readerhypermegacool@blog ~/blogs $ <span style="color:white">ls</span> </p>
+        <div class="row">
+    {{ $paginator := .Paginator 6 }} <!-- Show 6 posts per page -->
+    {{ range $paginator.Pages }}
+    <div class="col-12 col-md-6 col-lg-4 mb-4 blog-post" data-category="{{ .Params.category }}">
+    <a href="{{ .RelPermalink }}" class="text-decoration-none">
+      <div class="blog-post-container h-100 shadow-sm">
+        <div class="blog-post-body">
+          <h5 class="blog-title">{{ .Title }}</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+  {{ end }}
+</div>
+
+<!-- Pagination Controls -->
+<div class="pagination-container text-center mt-4">
+  {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}" class="btn btn-sm btn-secondary">Previous</a>
+  {{ end }}
+  <span class="pagination-text">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}" class="btn btn-sm btn-secondary">Next</a>
+  {{ end }}
+</div>
+
+  </div>
+</div>
+
+<!-- Link the external script -->
+<script src="{{ "/js/filter.js" | relURL }}"></script>
+
+{{ end }}
+

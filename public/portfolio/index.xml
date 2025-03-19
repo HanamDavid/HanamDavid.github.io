@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Portfolio on Juan David | Backend Developer</title>
+    <link>http://localhost:1313/portfolio/</link>
+    <description>Recent content in My Portfolio on Juan David | Backend Developer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AFDA</title>
+      <link>http://localhost:1313/portfolio/afda/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/afda/</guid>
+      <description>Alzheimer detection AI with TF</description>
+    </item>
+    <item>
+      <title>AIm</title>
+      <link>http://localhost:1313/portfolio/aim/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/aim/</guid>
+      <description>AI Chatbot with Django</description>
+    </item>
+    <item>
+      <title>GoPsalm</title>
+      <link>http://localhost:1313/portfolio/gopsalm/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/gopsalm/</guid>
+      <description>A CLI Psalm displayer</description>
+    </item>
+    <item>
+      <title>Soter Katholikos</title>
+      <link>http://localhost:1313/portfolio/soter-katholikos/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/soter-katholikos/</guid>
+      <description>An open-source repository to help people learn more about their faith and Patristics.</description>
+    </item>
+  </channel>
+</rss>

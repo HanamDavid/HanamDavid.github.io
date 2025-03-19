@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <div class="py-5">
+        <div class="main-container">
+            <h1 class="text-center">{{ .Title }}</h1>
+            <p class=" text-center" style="color:white">{{ .Date.Format "January 2, 2006" }}</p>
+            <div class="blog-content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+{{ end }}
+

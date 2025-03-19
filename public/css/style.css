@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+:root{
+    --home: #3a9491;
+    --blog: #7039d6;
+    --port: #d9cb42 ;
+    --cont: #e04979;
+    --bg:   #0C090A;
+}
+
+/* Add a media query to respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .iconc:hover {
+        animation: none !important;
+    }
+
+    body {
+        animation: none;
+    }
+
+    .band {
+        animation: none;
+    }
+
+    .project-card:hover {
+        transform: translateY(-2px); /* Subtle effect instead of rotation */
+    }
+}
+body {
+    font-family: 'Sawarabi Mincho', serif;
+    background: var(--background-image, none) repeat center center fixed;
+    min-height: 100vh;
+    color: #2e2e2e;
+    animation: movePattern 20s linear infinite;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px); /* Para compatibilidad en Safari */
+    overflow-x: hidden;
+    position: relative;
+}
+
+@keyframes movePattern {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; } /* Adjust speed & distance */
+}
+
+/* ---- Vertical Left Navbar  ---- */
+.nav-vertical {
+    font-family: 'Sawarabi Mincho', serif;
+    background: rgba(30, 30, 30, 0.80) !important; /* Soft Creamy Color */
+    box-shadow: 0 4px 10px rgba(200, 200, 200, 0.1);
+    border: 2px solid white;
+    border-top: none;
+    padding: 20px;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+.nav-container { /* Added to provide better control */
+    width: 100%; /* Important for internal layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%; /* Adjust size */
+    max-width: 200px;
+    height: auto;
+    fill: white; /* Change SVG color */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(5deg) scale(1.1); /* Subtle rotation on hover */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
+    grid-template-areas:
+        "one one"
+        "three two"
+        "three four";
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.grid-container a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+.item-1 {
+    grid-area: one;
+    background-color: var(--home);
+}
+.item-2 {
+    grid-area: two;
+    background-color:var(--port);
+}
+.item-3 {
+    grid-area: three;
+    background-color: var(--blog);
+}
+.item-4 {
+    grid-area: four;
+    background-color: var(--cont);
+}
+.item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+.item-1:hover{color: var(--home);text-decoration: underline var(--home)}
+.item-2:hover{color: var(--port);text-decoration: underline var(--port)}
+.item-3:hover{color: var(--blog);text-decoration: underline var(--blog)}
+.item-4:hover{ color: var(--cont);text-decoration: underline var(--cont)}
+
+/* Add focus styles for interactive elements */
+.grid-item:focus,
+a:focus,
+button:focus {
+    outline: 3px solid #4d90fe; /* High contrast blue outline */
+    outline-offset: 2px;
+    text-decoration: underline;
+}
+
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.grid-item:hover {
+    background-color: white;
+    transform: scale(1.05);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+.navcon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+    justify-content: flex-end;
+}
+.navcon p{
+    color: white;
+    margin-left: 15px;
+}
+.icon{
+    width: 60px;
+    border-radius: 50px;
+}
+.iconc{
+    width:60px;
+    border-radius: 50px;
+}
+.iconc:hover{
+    animation: rotatecat 0.5s ease-in-out infinite;
+}
+@keyframes rotatecat {
+  from { rotate: 0deg;}
+  to { rotate: 360deg; } /* Adjust speed & distance */
+}
+
+
+
+
+/* ---- Responsive Adjustments for Mobile (max-width: 768px) ---- */
+@media (max-width: 768px) {
+    .nav-vertical {
+        display: flex;           /* Ensure it's a flex container */
+        position: relative;
+        width: 100%;
+        padding: 2px;
+        max-width: 90%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Make the container fill the width and wrap if needed */
+    .nav-container {
+        width: 100%;
+        display: flex;
+        padding: 2px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Resize the logo */
+    .logo {
+        width: 70px;
+    }
+
+    /* Ensure nav links are inline but can wrap as needed */
+    .nav-links {
+        display: flex;
+        max-width: 150px;
+    }
+
+    /* Change the grid container to a CSS grid with two columns */
+    .grid-container {
+        display: grid;
+        grid-template-areas: "one two" "three four";
+        grid-auto-rows: minmax(20px,auto);
+        gap: 5px;
+    }
+
+    .grid-item {
+        font-size: 16px;
+        padding: 2px;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* Adjust the navcon (social icons and text) layout */
+    .navcon {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navcon p {
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .icon,
+    .iconc {
+        width: 40px;
+    }
+
+ }
+
+
+
+
+
+/* Boot overlay styles */
+#boot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000; /* Black background for a terminal effect */
+  color: #0f0; /* Green text for a classic terminal feel */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.boot-sequence {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  padding: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.disable-animations * {
+    animation: none !important;
+    transition: none !important;
+}
+
+
+
+/* ---- Main Content Styling ---- */
+.main-content {
+    transition: all 0.3s ease;
+}
+
+.main-container{
+    background-color:var(--bg);
+    border: 1px solid white;
+    color:white;
+    min-height: 90vh;
+}
+.main-container a{
+    text-decoration: none;
+}
+.whoami-name{
+    font-family: "Pacifico", cursive;
+    text-align:center;
+    text-shadow: var(--home) 3px 3px;
+    color: white;
+    font-size: 5.2vw;
+}
+/* Animation using percentage-based translation */
+@keyframes move {
+  0% {
+    transform: translateX(-4vw);
+    opacity: 1;
+  }
+  30%{
+    opacity: 1;
+}
+  50% {
+    transform: translateX(4vw);
+    opacity: 0;
+  }
+}
+
+/********** Animated Band **********/
+.band {
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  animation: move 6s ease-in-out infinite;
+}
+
+/********** JSON Styling **********/
+.band h1 {
+  margin: 0 5px;
+  font-size: 0.8em;
+  color: #ff6392; /* A pastel pinkish highlight */
+  font-weight: 600;
+}
+
+.band li {
+  list-style: none;
+  font-size: 0.8em;
+  color: black;
+  white-space: nowrap;
+}
+
+/********** Images **********/
+.cliser {
+  width: 70px; /* Slightly bigger for a friendly look */
+  flex-grow: 1;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+/********** Overall Layout **********/
+.bandser {
+    background-color: var(--home);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catimg{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.portfolio-header{
+    font-family: "Pacifico", cursive;
+    text-align:center;
+    text-shadow: var(--port) 3px 3px;
+    color: white;
+    font-size: 4rem;
+    padding: 15px;
+}
+.project-card {
+    background-color: var(--port);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+
+/* Container for the image to enforce consistent sizing */
+.project-img-container {
+    background-color: white;
+    height: 200px; /* Fixed height for every image */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-img-container img.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop image if it's too big, fill white background if too small */
+}
+
+/* Hover effect for the card */
+.project-card:hover {
+    transform: translateY(-5px) rotate(-4deg) scale(1.2);
+    z-index: 100;
+}
+
+/* Typography for a newspaper feel */
+.project-card .card-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.project-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/* Transition overlay covers only main content */
+#transition-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+  z-index: 10;
+  transition: transform 0.3s ease-out;
+}
+
+/* When active, overlay scales to fully cover (wipe effect) */
+#transition-overlay.active {
+  transform: scaleX(1);
+}
+
+/* Main content styling with fade-out transition */
+main.main-content {
+  position: relative; /* necessary for the absolute overlay */
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+main.main-content.fade-out {
+  opacity: 0;
+}
+
+/* ---- Blog Styling ---- */
+.blog-header{
+    font-family: "Pacifico", cursive;
+    text-align:center;
+    text-shadow: var(--blog) 3px 3px;
+    color: white;
+    font-size: 4rem;
+    padding: 15px;
+}
+.active-btn {
+  background-color: var(--blog) !important;
+  color: white !important;
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px white;
+  border-radius: 0px;
+}
+.btn-blog{
+    border-radius: 0px;
+    background-color: transparent;
+    color: grey;
+    border: 1px solid white;
+}
+.btn-blog:hover{
+    background-color: white;
+    color: var(--blog);
+    transform: scale(1.02);
+    transition: 0.3 ease-in-out;
+}
+.ls{
+    color: var(--blog);
+    cursor: default;
+}
+.blog-post-container{
+    background-color: var(--blog);
+    border-left: solid 5px white;
+    color:white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.blog-post-container:hover{
+    transform: scale(1.02);
+    animation: colormove 1s linear infinite;
+}
+@keyframes colormove{
+  0% {
+    background-color: var(--blog);
+    color: white;
+  }
+  30%{
+    background-color: white;
+    color: white;
+}
+  50% {
+    background-color: var(--blog);
+    color: white;
+  }
+}
+
+.blog-content {
+    background-color: var(--bg); /* Dark but slightly soft black */
+    color: #EAEAEA; /* Soft off-white text for better contrast */
+    padding: 25px;
+    line-height: 1.7;
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto; /* Center content */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+}
+
+
+.blog-content p {
+    margin-bottom: 1.2em;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+    color: var(--blog);
+    margin-top: 1.5em;
+}
+
+.blog-content a {
+    color: #ffb400; /* Gold/yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+    color: #ff9900;
+}
+
+.blog-content pre {
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Lists */
+.blog-content ul {
+    padding-left: 25px;
+}
+
+.blog-content li {
+    margin-bottom: 8px;
+}
+
+/* Blockquotes */
+.blog-content blockquote {
+    border-left: 4px solid var(--blog);
+    padding-left: 15px;
+    font-style: italic;
+    color: #c5c6c7;
+    margin: 15px 0;
+}
+
+
+/* ---- Contact Styling ---- */
+.contact-header{
+    font-family: "Pacifico", cursive;
+    text-align:center;
+    text-shadow: var(--cont) 3px 3px;
+    color: white;
+    font-size: 4rem;
+    padding: 15px;
+}
+.contact-card{
+    background-color: var(--cont);
+    border-radius: 10px 10px 0px 0px;
+}
+.contact-card-b{
+    background-color: var(--cont);
+    border-radius: 0px 0px 10px 10px;
+}
+.contact-img{
+    min-height: 300px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+

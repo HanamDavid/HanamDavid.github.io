@@ -562,6 +562,10 @@ main.main-content.fade-out {
 .blog-content ul {
     padding-left: 25px;
 }
+.blog-content img{
+    max-width: 100%;
+    height: auto;
+}
 
 .blog-content li {
     margin-bottom: 8px;

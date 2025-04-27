@@ -3,14 +3,6 @@
 <head>
   <title>{{ .Title }}</title>
   {{ partial "head.html" . }}
-
-  {{ with .Params.background }}
-  <style>
-    :root {
-      --background-image: url('{{ . }}');
-    }
-  </style>
-  {{ end }}
 </head>
 <body>
   {{ partial "loader.html" . }}

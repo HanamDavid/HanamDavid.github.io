@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 :root{
-    --home: #3a9491;
+    --home: #a7dadc;
+    --blog: #8f78ad;
+    --port: #d4bca3; /* Muted gold/ochre - warm, earthy, and subtle richness */
+    --cont: #e5a8a8; /* Soft rose/blush - gentle, warm, and inviting */
     --blog: #7039d6;
-    --port: #d9cb42 ;
-    --cont: #e04979;
     --bg:   #0C090A;
 }
 
@@ -34,30 +35,24 @@
 }
 body {
     font-family: 'Sawarabi Mincho', serif;
-    background: var(--background-image, none) repeat center center fixed;
+    background: url("/images/bg.png") ;
     min-height: 100vh;
-    color: #2e2e2e;
+    color: #333;
     animation: movePattern 20s linear infinite;
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px); /* Para compatibilidad en Safari */
     overflow-x: hidden;
     position: relative;
 }
 
 @keyframes movePattern {
   from { background-position: 0 0; }
-  to { background-position: 100px 100px; } /* Adjust speed & distance */
+  to { background-position: -100px -100px; } /* Adjust speed & distance */
 }
 
 /* ---- Vertical Left Navbar  ---- */
 .nav-vertical {
     font-family: 'Sawarabi Mincho', serif;
-    background: rgba(30, 30, 30, 0.80) !important; /* Soft Creamy Color */
-    box-shadow: 0 4px 10px rgba(200, 200, 200, 0.1);
-    border: 2px solid white;
-    border-top: none;
     padding: 20px;
-    height: 100%;
+    height: 100vh;
     border-radius: 0px 0px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -92,8 +87,9 @@ body {
     gap: 5px;
     grid-template-areas:
         "one one"
-        "three two"
-        "three four";
+        "two two"
+        "three three"
+        "four four";
 }
 
 .nav-links {
@@ -104,7 +100,7 @@ body {
 }
 
 .grid-container a {
-    color: white;
+    color: #333;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -113,28 +109,21 @@ body {
 
 .item-1 {
     grid-area: one;
-    background-color: var(--home);
 }
 .item-2 {
     grid-area: two;
-    background-color:var(--port);
 }
 .item-3 {
     grid-area: three;
-    background-color: var(--blog);
 }
 .item-4 {
     grid-area: four;
-    background-color: var(--cont);
 }
-.item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover {
-    transform: scale(1.1);
-    background-color: white;
-}
-.item-1:hover{color: var(--home);text-decoration: underline var(--home)}
-.item-2:hover{color: var(--port);text-decoration: underline var(--port)}
-.item-3:hover{color: var(--blog);text-decoration: underline var(--blog)}
-.item-4:hover{ color: var(--cont);text-decoration: underline var(--cont)}
+
+.item-1:hover{color: var(--home);text-decoration: underline var(--home);font-size:18px}
+.item-2:hover{color: var(--port);text-decoration: underline var(--port); font-size: 18px;}
+.item-3:hover{color: var(--blog);text-decoration: underline var(--blog); font-size: 18px;}
+.item-4:hover{ color: var(--cont);text-decoration: underline var(--cont); font-size: 18px;}
 
 /* Add focus styles for interactive elements */
 .grid-item:focus,
@@ -157,7 +146,6 @@ button:focus {
 }
 
 .grid-item:hover {
-    background-color: white;
     transform: scale(1.05);
     z-index: 1000;
     transition: transform 0.3s ease-in-out, box-shadow 0.7s ease-in-out;
@@ -237,14 +225,16 @@ button:focus {
         gap: 5px;
     }
 
-    .grid-item {
-        font-size: 16px;
+    .grid-item, .grid-container a {
+        font-size: 8px;
         padding: 2px;
         height: 50px;
         text-align: center;
     }
+    .grid-container a:hover {
+        font-size:9px;
+    }
 
-    /* Adjust the navcon (social icons and text) layout */
     .navcon {
         margin-top: 2px;
         display: flex;
@@ -264,52 +254,43 @@ button:focus {
 
  }
 
-
-
-
-
-/* Boot overlay styles */
-#boot-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #000; /* Black background for a terminal effect */
-  color: #0f0; /* Green text for a classic terminal feel */
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
-}
-
-.boot-sequence {
-  font-family: 'Courier New', monospace;
-  font-size: 1rem;
-  padding: 20px;
-  white-space: pre-wrap;
-  text-align: left;
-}
-
-.disable-animations * {
-    animation: none !important;
-    transition: none !important;
-}
-
-
-
 /* ---- Main Content Styling ---- */
 .main-content {
     transition: all 0.3s ease;
 }
 
 .main-container{
-    background-color:var(--bg);
-    border: 1px solid white;
-    color:white;
-    min-height: 90vh;
+    background-color: #f4f4f0;
+    color: #333;
+    border-radius: 12px; /* Soft rounded corners */
+    padding: 40px 60px; /* Generous padding for spaciousness */
+    margin: 40px auto; /* Centered with top/bottom margin */
+    max-width: 960px; /* Reasonable maximum width for readability */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle, elegant shadow */
+    font-family: 'Open Sans', sans-serif; /* Clean and readable sans-serif */
+    line-height: 1.7; /* Improved line height for readability */
+}
+@keyframes painting {
+  0% {
+    transform: scaleX(0) translateX(-50%);
+    filter: blur(8px);
+    opacity: 0;
+  }
+  10% {
+    transform: scaleX(1.01) translateX(10%);
+    opacity: 0.7;
+    filter: blur(4px);
+  }
+  80% {
+    transform: scaleX(1) translateX(0);
+    opacity: 1;
+    filter: blur(1px);
+  }
+  100% {
+    transform: scaleX(1) translateX(0);
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 .main-container a{
     text-decoration: none;
@@ -317,8 +298,7 @@ button:focus {
 .whoami-name{
     font-family: "Pacifico", cursive;
     text-align:center;
-    text-shadow: var(--home) 3px 3px;
-    color: white;
+    color: var(--home);
     font-size: 5.2vw;
 }
 /* Animation using percentage-based translation */
@@ -369,9 +349,12 @@ button:focus {
 /********** Overall Layout **********/
 .bandser {
     background-color: var(--home);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 }
 .catimg{
     width: 200px;
@@ -381,8 +364,7 @@ button:focus {
 .portfolio-header{
     font-family: "Pacifico", cursive;
     text-align:center;
-    text-shadow: var(--port) 3px 3px;
-    color: white;
+    color: var(--port);
     font-size: 4rem;
     padding: 15px;
 }
@@ -390,6 +372,10 @@ button:focus {
     background-color: var(--port);
     transition: transform 0.3s ease;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    overflow: hidden; /* To contain rounded corners */
+    transition: transform 0.2s ease-in-out; /* For hover effect */
 }
 
 
@@ -464,8 +450,7 @@ main.main-content.fade-out {
 .blog-header{
     font-family: "Pacifico", cursive;
     text-align:center;
-    text-shadow: var(--blog) 3px 3px;
-    color: white;
+    color: var(--blog);
     font-size: 4rem;
     padding: 15px;
 }
@@ -477,10 +462,13 @@ main.main-content.fade-out {
   border-radius: 0px;
 }
 .btn-blog{
-    border-radius: 0px;
-    background-color: transparent;
-    color: grey;
-    border: 1px solid white;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #e9ecef; /* Light background */
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
 }
 .btn-blog:hover{
     background-color: white;
@@ -501,26 +489,10 @@ main.main-content.fade-out {
 
 .blog-post-container:hover{
     transform: scale(1.02);
-    animation: colormove 1s linear infinite;
-}
-@keyframes colormove{
-  0% {
-    background-color: var(--blog);
-    color: white;
-  }
-  30%{
-    background-color: white;
-    color: white;
-}
-  50% {
-    background-color: var(--blog);
-    color: white;
-  }
 }
 
 .blog-content {
-    background-color: var(--bg); /* Dark but slightly soft black */
-    color: #EAEAEA; /* Soft off-white text for better contrast */
+    color: #333; /* Soft off-white text for better contrast */
     padding: 25px;
     line-height: 1.7;
     font-size: 18px;
@@ -552,7 +524,6 @@ main.main-content.fade-out {
 
 .blog-content pre {
     background-color: #282a36;
-    color: #f8f8f2;
     padding: 12px;
     border-radius: 8px;
     overflow-x: auto;
@@ -562,15 +533,14 @@ main.main-content.fade-out {
 .blog-content ul {
     padding-left: 25px;
 }
-
-.blog-content li {
-    margin-bottom: 8px;
-}
 .blog-content img{
     max-width: 100%;
     height: auto;
 }
 
+.blog-content li {
+    margin-bottom: 8px;
+}
 
 /* Blockquotes */
 .blog-content blockquote {
@@ -586,18 +556,13 @@ main.main-content.fade-out {
 .contact-header{
     font-family: "Pacifico", cursive;
     text-align:center;
-    text-shadow: var(--cont) 3px 3px;
-    color: white;
+    color: var(--cont);
     font-size: 4rem;
     padding: 15px;
 }
 .contact-card{
     background-color: var(--cont);
-    border-radius: 10px 10px 0px 0px;
-}
-.contact-card-b{
-    background-color: var(--cont);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
 }
 .contact-img{
     min-height: 300px;
